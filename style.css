@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-height: 100vh;
+    font-size: 16px;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 50px auto;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 1px #000;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.img, .big-text, .small-text,.eth,.line {
+    padding-bottom: 25px;
+}
+
+.big-text {
+    font-weight: 600;
+    color: #fff;
+}
+
+.small-text {
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.eth{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-icon, .days {
+    display: flex;
+}
+
+.eth-text {
+    color: hsl(178, 100%, 50%);
+    padding-left: 7px;
+}
+
+.days-text {
+    font-size: 14px;
+    padding-left: 7px;
+    color: hsl(215, 51%, 70%);
+}
+
+
+.line {
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+
+.user img {
+    width: 10%;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+}
+
+.user-text {
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 7px;
+}
+
+.user-text > p {
+    color: hsl(215, 51%, 70%);
+}
+
+.user-text span {
+    color: #fff;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:1023px) {
+     body,.card, .main-card{
+        width: 90%;
+    }
+
+
+    .card {
+        padding: 30px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+}
+
+
+/* larger phones to smaller tablets */
+@media only screen and (max-width:767px) {
+    .card, body, .main-card{
+        width: 100%;
+    }
+
+    .card {
+        padding: 30px;
+    }
+    
+}
+
+/* smaller to larger phones */
+@media only screen and (max-width:600px) {
+    .card, body, .main-card{
+        width: 100%;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
